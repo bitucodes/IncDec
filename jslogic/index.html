@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSLogic</title>
+</head>
+<body>
+   <button onclick="execute()">Increment</button>
+   <input type="text" id="inc"></input>
+
+   <button onclick="newexe()">Decrement</button>
+
+
+    <script> 
+        var count = 0;
+        function execute() {
+            document.getElementById("inc").value = ++count;
+        }
+
+        function newexe() {
+            document.getElementById("inc").value = --count;
+        }
+
+    </script>
+
+</body>
+</html>
